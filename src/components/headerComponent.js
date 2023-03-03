@@ -47,7 +47,7 @@ const SocialMenu = styled.div`
   justify-content: right;
 `
 
-const iconSize = '19px'
+const iconSize = '22px'
 
 export default function HeaderComponent() {
 return (

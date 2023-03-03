@@ -43,11 +43,15 @@ const Reference = styled.p`
    
 `
 
+const Captalize = styled.p`
+font-size: ${props => props.size}
+`
+
 export default function MainComponent() {
     return (
         <Main>
             <Text>
-                Sou formada em Psicologia e apaixonada pela linha de trabalho da Gestalt-terapia, 
+               Sou formada em Psicologia e apaixonada pela linha de trabalho da Gestalt-terapia, 
                 uma abordagem que entende uma pessoa como um todo em constante crescimento. 
                 O objetivo de meu trabalho é firmar uma parceria terapeuta/cliente que nos leve às 
                 mudanças e compreensões esperadas. Juntos! 
@@ -55,7 +59,7 @@ export default function MainComponent() {
            <br />
             <Italic>
             <Quote>
-            A terapia possibilita ao indivíduo deixar de repetir de forma morta sua vida, apresentando um novo conflito criativo que convida ao crescimento, à mudança, ao excitamento e à aventura de viver.
+            &#8220;A terapia possibilita ao indivíduo deixar de repetir de forma morta sua vida, apresentando um novo conflito criativo que convida ao crescimento, à mudança, ao excitamento e à aventura de viver.&#8221;
             </Quote>
             </Italic>
             <Reference>Fritz Pearls (1983-1970)</Reference>

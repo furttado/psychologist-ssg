@@ -8,7 +8,7 @@ const Section = styled.section`
     background-color: none;
     color: ${theme.colors.background};
     
-    padding: 10% 3% 10% 3%; 
+    padding: 10% 3% 13% 3%; 
 
     display: grid ;
     grid-template-columns: 1fr 1fr 1fr;
