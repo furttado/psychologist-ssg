@@ -4,7 +4,6 @@ import Facebook from '../files/facebook.png'
 import Instagram from '../files/instagram.png'
 import WhatsApp from '../files/whatsapp.png'
 import Image from 'next/image'
-import {theme} from './globalStyle'
 
 
 const Social = styled.div`
@@ -22,7 +21,7 @@ export const Icon = styled.button`
     background: none;
     border: none ;
     cursor: pointer;
-    opacity: ${props => props.opacity || 0.7};
+    opacity: ${props => props.opacity || 0.8};
 
     img { 
     width:${props => props.width} ;
