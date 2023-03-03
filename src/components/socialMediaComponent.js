@@ -18,11 +18,11 @@ const Social = styled.div`
 
 `
 
-const Icon = styled.button`
+export const Icon = styled.button`
     background: none;
     border: none ;
     cursor: pointer;
-    opacity: 0.7;
+    opacity: ${props => props.opacity || 0.7};
 
     img { 
     width:${props => props.width} ;
