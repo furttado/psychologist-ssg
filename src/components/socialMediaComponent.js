@@ -23,10 +23,11 @@ export const Icon = styled.button`
     cursor: pointer;
     opacity: ${props => props.opacity || 0.8};
 
+
+
     img { 
     width:${props => props.width} ;
     height: ${props => props.height} ;   
-
     }
    
 `

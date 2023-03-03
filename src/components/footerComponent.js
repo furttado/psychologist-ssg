@@ -54,7 +54,7 @@ export default function FooterComponent(props) {
     return (
         <Footer>
             <Box>
-                <Text textAlign={'left'} opacity={0.8}> 
+                <Text textAlign={'left'} opacity={0.8} style={{display: 'grid', rowGap: '6%'}}> 
                     <Link href={footerUrls[0]} target="_blank">
                     <Icon width={'20px'} height={'20px'}><Image src={Phone} alt='telefone'/></Icon> &nbsp;32 9863-3669 <br />
                     </Link>
