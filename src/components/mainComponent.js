@@ -1,6 +1,7 @@
 "use client"
 import styled from 'styled-components'
 import {theme} from './globalStyle'
+import { CONTENT_BASE } from '../data'
 
 const Main = styled.main`
     background: ${theme.colors.secondaryBackground};
@@ -9,8 +10,7 @@ const Main = styled.main`
     padding-top: 7%;
     padding-bottom: 7%;
     height: auto;
-
-           
+          
 `
 
 const Text = styled.p`
@@ -51,18 +51,15 @@ export default function MainComponent() {
     return (
         <Main>
             <Text>
-               Sou formada em Psicologia e apaixonada pela linha de trabalho da Gestalt-terapia, 
-                uma abordagem que entende uma pessoa como um todo em constante crescimento. 
-                O objetivo de meu trabalho é firmar uma parceria terapeuta/cliente que nos leve às 
-                mudanças e compreensões esperadas. Juntos! 
+               {CONTENT_BASE.bio} 
             </Text>
            <br />
             <Italic>
             <Quote>
-            &#8220;A terapia possibilita ao indivíduo deixar de repetir de forma morta sua vida, apresentando um novo conflito criativo que convida ao crescimento, à mudança, ao excitamento e à aventura de viver.&#8221;
+            &#8220;{CONTENT_BASE.quote}&#8221;
             </Quote>
             </Italic>
-            <Reference>Fritz Pearls (1983-1970)</Reference>
+            <Reference>{CONTENT_BASE.author}</Reference>
         </Main>
     )
 }
