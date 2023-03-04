@@ -14,14 +14,26 @@ const Social = styled.div`
     height: ${props => props && props.boxHeight} ;
 
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
+    row-gap: ${props => props.rowGap};
+    grid-template-columns: ${props => props.columns};
+    grid-template-rows: ${props => props.rows};
+    justify-items: ${props => props.justifyItems};
+    align-content: center;
+    margin-right: ${props => props.marginRight};
 
 `
 
 export default function SocialMediaComponent(props) {
     return (
-        <Social boxWidth={props.boxWidth} boxHeight={props.boxHeight}>
+        <Social 
+        boxWidth={props.boxWidth} 
+        boxHeight={props.boxHeight} 
+        columns={props.columns} 
+        rows={props.rows}
+        rowGap={props.rowGap}
+        justifyItems={props.justifyItems}
+        marginRight={props.marginRight}
+        >
             <a href={CONTACT_BASE.whatsapp} target={'_blank'}>
                 <Icon width={props.width} height={props.height}>
                     <Image src={WhatsApp} alt='Whatsapp icon'/>
