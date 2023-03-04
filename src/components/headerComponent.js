@@ -53,7 +53,7 @@ export default function HeaderComponent() {
 return (
   <>
       <SocialMenu>
-      <SocialMediaComponent width={iconSize} height={iconSize} boxWidth={'50vw'}/>
+      <SocialMediaComponent width={iconSize} height={iconSize} boxWidth={'50vw'} columns={'1fr 1fr 1fr 1fr'}/>
       </SocialMenu>
       <Header>
       <Title>

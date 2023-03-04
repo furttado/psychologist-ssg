@@ -12,6 +12,7 @@ export const Icon = styled.button`
     width:${props => props.width} ;
     height: ${props => props.height} ;   
     }
+
   ` 
 
 export const Text = styled.p`
@@ -25,5 +26,6 @@ export const Text = styled.p`
 export const Link = styled.a`
         text-decoration: none;
         color: white;
+        
 
 `

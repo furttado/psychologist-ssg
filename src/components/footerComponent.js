@@ -24,42 +24,49 @@ const Footer = styled.footer`
 const Box = styled.section`
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
     min-height: 100%;
-    margin-bottom: 15%;
-
+    margin-bottom: 10%;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
 
 `
 
 const iconSize = '22px'
+const leftIconsSize = '22px'
 
 
 export default function FooterComponent(props) {
     return (
         <Footer>
             <Box>
-                <Text textAlign={'left'} opacity={0.8} style={{display: 'grid', rowGap: '6%', minHeight:'fit-content'}}> 
+                <Text 
+                textAlign={'left'} 
+                opacity={0.8} 
+                style={{display: 'grid', rowGap: '4.5%', minHeight:'fit-content', justifyContent:'center', width:'70vw'}} 
+               > 
                     <Link href={CONTACT_BASE.phone_link} target="_blank">
-                    <Icon width={'20px'} height={'20px'}><Image src={Phone} alt='telefone'/></Icon> &nbsp;{CONTACT_BASE.phone} <br />
+                    <Icon width={leftIconsSize} height={leftIconsSize}><Image src={Phone} alt='telefone'/></Icon> &nbsp;{CONTACT_BASE.phone} <br />
                     </Link>
                     <Link href={CONTACT_BASE.email_url} target="_blank">
-                    <Icon width={'20px'} height={'20px'}><Image src={Email} alt='email'/></Icon> &nbsp;{CONTACT_BASE.email} <br />
+                    <Icon width={leftIconsSize} height={leftIconsSize}><Image src={Email} alt='email'/></Icon> &nbsp;{CONTACT_BASE.email} <br />
                     </Link>
                     <Link href={CONTACT_BASE.address_main_maps} target="_blank">                   
-                    <Icon width={'20px'} height={'20px'}><Image src={Location} alt='endereço'/></Icon>
+                    <Icon width={leftIconsSize} height={leftIconsSize}><Image src={Location} alt='endereço'/></Icon>
                     &nbsp;{CONTACT_BASE.address_main} <br /> 
                     </Link>
                     <Link href={CONTACT_BASE.address_secondary_maps} target="_blank">
-                    <Icon width={'20px'} height={'20px'}><Image src={Location} alt='endereço'/></Icon>
+                    <Icon width={leftIconsSize} height={leftIconsSize}><Image src={Location} alt='endereço'/></Icon>
                     &nbsp;{CONTACT_BASE.address_secondary}
                     </Link>
                 </Text>
                 <SocialMediaComponent 
                     width={iconSize} 
                     height={iconSize} 
-                    boxWidth={'40vw'}
+                    boxWidth={'fit-content'}
+                    columns={'1fr'}
+                    rows={'4fr'}
+                    rowGap={'5%'}
                 />
             </Box>
 

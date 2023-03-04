@@ -6,7 +6,7 @@ export const CONTACT_BASE = {
     address_secondary: 'Edifício das Clínicas, sala 109, Centro, Muriaé-MG',
     address_secondary_maps: 'https://www.google.com.br/maps/place/Edif%C3%ADcio+Das+Cl%C3%ADnicas/data=!4m7!3m6!1s0xbcc6681472f175:0x56725540319e3b52!8m2!3d-21.1373539!4d-42.3652792!16s%2Fg%2F11gbkt0dw3!19sChIJdfFyFGjGvAARUjueMUBVclY?authuser=0&hl=pt-BR&rclk=1',
     phone: '32 9863-3669',
-    phone_link: 'tel:+553298633669',
+    phone_link: 'tel:03298633669',
     email: 'kellymarapsi@gmail.com',
     email_url: 'mailto:kellymarapsi@gmail.com',
     whatsapp: 'https://wa.me/5532998633669?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+consulta%21',
