@@ -17,7 +17,7 @@ export default function Home() {
     <ThemeProvider theme={theme}>
       <Head>
   <title>Kelly Mara Psicóloga</title>
-  <meta name="Kelly, Psicóloga em Muriaé-MG - Tratamento para problemas emocionais e psicológicos - Atendimento presencial e online - Consulta com psicóloga experiente - Agendamento pelo WhatsApp" content="Kelly é uma psicóloga experiente que oferece tratamento presencial e online para diversos problemas emocionais e psicológicos em Muriaé-MG. Agende sua consulta pelo WhatsApp e receba ajuda profissional de uma psicóloga experiente." />
+  <meta name="Kelly Mara, Psicóloga em Muriaé-MG" content="Psicóloga em Muriaé-MG. Tratamento para ansiedade, depressão e outros problemas emocionais. Atendimento presencial e online. Agende sua consulta via WhatsApp." />
   <link rel='icon' href='/favicon3.ico' />
 </Head>
     <GlobalStyle />
@@ -29,6 +29,5 @@ export default function Home() {
      <FooterComponent />
    </Container>
    </ThemeProvider>
-
   )
 }
