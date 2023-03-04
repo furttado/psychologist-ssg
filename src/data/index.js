@@ -8,6 +8,7 @@ export const CONTACT_BASE = {
     phone: '32 9863-3669',
     phone_link: 'tel:+553298633669',
     email: 'kellymarapsi@gmail.com',
+    email_url: 'mailto:kellymarapsi@gmail.com',
     whatsapp: 'https://wa.me/5532998633669?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+consulta%21',
     instagram: 'https://www.instagram.com/kellymarapsi/',
     facebook: 'https://www.facebook.com/kellymarapsi',
