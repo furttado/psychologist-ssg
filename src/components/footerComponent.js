@@ -43,7 +43,7 @@ export default function FooterComponent(props) {
                 <Text 
                 textAlign={'left'} 
                 opacity={0.8} 
-                style={{display: 'grid', rowGap: '4.5%', minHeight:'fit-content', alignContent:'center', width:'70vw'}} 
+                style={{display: 'grid', rowGap: '4.5%', minHeight:'fit-content', justifyContent:'center', width:'70vw'}} 
                > 
                     <Link href={CONTACT_BASE.phone_link} target="_blank">
                     <Icon width={leftIconsSize} height={leftIconsSize}><Image src={Phone} alt='telefone'/></Icon> &nbsp;{CONTACT_BASE.phone} <br />
