@@ -5,17 +5,41 @@ import { CONTENT_BASE } from '../data'
 
 const Main = styled.main`
     background: ${theme.colors.secondaryBackground};
-    padding-left: 3%; 
-    padding-right: 3%; 
-    padding-top: 7%;
-    padding-bottom: 7%;
+    padding: 7% 3% 7% 3%;
     height: auto;
+
+    display: grid;
+    justify-items: center;
+
+    /* Estilos para tela de desktop */
+    @media only screen and (min-width: 768px) {
+      
+    };
+
+    /* Estilos para tela intermediária */
+    @media only screen and (min-width: 481px) and (max-width: 767px) {
+      
+    };
+
+
           
 `
 
 const Text = styled.p`
     text-align: justify;
     color: ${theme.colors.background};
+
+
+    /* Estilos para tela de desktop */
+    @media only screen and (min-width: 768px) {
+      width: 50%
+    };
+
+    /* Estilos para tela intermediária */
+    @media only screen and (min-width: 481px) and (max-width: 767px) {
+      width: 50vw;
+    };
+
 `
 
 const Italic = styled.i`
@@ -24,6 +48,7 @@ const Italic = styled.i`
    
     align-items: center;
     justify-items: center;
+
 `
 
 const Quote = styled.p`
@@ -32,6 +57,17 @@ const Quote = styled.p`
     opacity: 0.8 ;
     text-align: justify;
     color: ${theme.colors.background};
+
+        /* Estilos para tela de desktop */
+    @media only screen and (min-width: 768px) {
+      width: 40%
+    };
+
+    /* Estilos para tela intermediária */
+    @media only screen and (min-width: 481px) and (max-width: 767px) {
+      width: 40%;
+    };
+
 `
 
 const Reference = styled.p`
@@ -40,6 +76,21 @@ const Reference = styled.p`
     text-align: right;
     padding-right: 5%;
     color: ${theme.colors.background};
+
+    /* Estilos para tela de desktop */
+        @media only screen and (min-width: 768px) {
+      width: 50%;
+    padding-right: 30%;
+
+    };
+
+    /* Estilos para tela intermediária */
+    @media only screen and (min-width: 481px) and (max-width: 767px) {
+      width: 50%;
+    };
+
+
+
    
 `
 
@@ -59,7 +110,7 @@ export default function MainComponent() {
             &#8220;{CONTENT_BASE.quote}&#8221;
             </Quote>
             </Italic>
-            <Reference>{CONTENT_BASE.author}</Reference>
+            <Reference style={{justifySelf: 'right'}}>{CONTENT_BASE.author}</Reference>
         </Main>
     )
 }
