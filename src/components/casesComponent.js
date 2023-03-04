@@ -36,7 +36,20 @@ const Cases = styled.span`
     font-size: ${props => props.fontSize || 'auto'};
     color: ${theme.colors.background};
 
-`
+    @media only screen and (min-width: 768px) {
+        width: 200px;
+        height: 200px;
+        font-size: 20px;
+  }
+
+   /* Estilos para tela de tablet */
+   @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
+  };
+
+`;
 
 export default function CasesComponent() {
     return (
