@@ -54,6 +54,7 @@ const SocialMenu = styled.div`
   /* Estilos para tela intermediária */
   @media only screen and (min-width: 481px) and (max-width: 1023px) {
     width: 300px;
+    justify-self: right
   };
 `
 
