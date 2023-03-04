@@ -18,7 +18,7 @@ export default function Home() {
       <Head>
   <title>Kelly Mara Psicóloga</title>
   <meta name="Kelly Mara, Psicóloga em Muriaé-MG" content="Psicóloga em Muriaé-MG. Tratamento para ansiedade, depressão e outros problemas emocionais. Atendimento presencial e online. Agende sua consulta via WhatsApp." />
-  <link rel='icon' href='/favicon3.ico' />
+  <link rel='icon' href='/favicon.ico' />
 </Head>
     <GlobalStyle />
    <Container>
