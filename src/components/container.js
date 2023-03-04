@@ -7,7 +7,7 @@ export const Container = styled.div`
     background-color: ${theme.colors.background};
     max-width: 100vw;
     height: 100vh;
-    margin: 0 auto ;  
+    margin: 0 auto;
     padding: 0;
 
     div, span , section, main {
@@ -19,7 +19,7 @@ export const Container = styled.div`
 
     /* Estilos para tela de desktop */
     @media only screen and (min-width: 768px) {
-      width: 70vw
+   width: 80vw;
     };
 
     /* Estilos para tela intermediária */
