@@ -24,7 +24,7 @@ const Footer = styled.footer`
 
 const Box = styled.section`
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.5fr 0.5fr;
     min-height: 100%;
     margin-bottom: 10%;
     align-items: center;
@@ -68,7 +68,7 @@ export default function FooterComponent(props) {
                     boxWidth={'fit-content'}
                     columns={'1fr'}
                     rows={'4fr'}
-                    rowGap={'5%'}
+                    rowGap={'10%'}
                 />
             </Box>
 
