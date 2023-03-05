@@ -1,9 +1,9 @@
 "use client"
 import styled from 'styled-components'
-import {theme} from './globalStyle'
+import {theme} from '../styles/globalStyle'
 import Location from '../files/location.png'
 import Image from 'next/image'
-import {Icon, Link, Text} from './style'
+import {Icon, Link, Text} from '../styles/styles'
 import {CONTACT_BASE} from '../data'
 
 const Section = styled.section`

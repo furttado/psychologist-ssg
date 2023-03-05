@@ -1,7 +1,7 @@
 "use client"
 import styled from 'styled-components'
 import SocialMediaComponent from './socialMediaComponent'
-import {theme} from './globalStyle'
+import {theme} from '../styles/globalStyle'
 
 
 const Section = styled.section`

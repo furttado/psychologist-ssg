@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import ProfilePicture from '../files/profile_picture2.png'
 import Image from 'next/image'
-import {theme} from './globalStyle'
+import {theme} from '../styles/globalStyle'
 import SocialMediaComponent from './socialMediaComponent'
 import { useState, useEffect } from 'react'
 
