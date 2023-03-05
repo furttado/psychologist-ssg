@@ -19,6 +19,7 @@ const Footer = styled.footer`
     
     align-items: center;
     justify-items: center;
+
 `
 
 const Box = styled.section`
@@ -28,7 +29,8 @@ const Box = styled.section`
     margin-bottom: 10%;
     align-items: center;
     align-content: center;
-    justify-items: center;
+    justify-items: right;
+
 
 `
 
@@ -43,7 +45,7 @@ export default function FooterComponent(props) {
                 <Text 
                 textAlign={'left'} 
                 opacity={0.8} 
-                style={{display: 'grid', rowGap: '4.5%', minHeight:'fit-content', justifyContent:'center', width:'70vw'}} 
+                style={{display: 'grid', rowGap: '4.5%', minHeight:'fit-content', justifyContent:'center'}} 
                > 
                     <Link href={CONTACT_BASE.phone_link} target="_blank">
                     <Icon width={leftIconsSize} height={leftIconsSize}><Image src={Phone} alt='telefone'/></Icon> &nbsp;{CONTACT_BASE.phone} <br />

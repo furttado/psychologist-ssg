@@ -22,7 +22,8 @@ export const Text = styled.p`
     opacity: ${props => props.opacity || 1};
 
 
-    
+
+   
 `
 
 export const Link = styled.a`
