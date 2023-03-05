@@ -2,8 +2,8 @@ import Head from "next/head"
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Head>
-        <meta name="viewport" content="viewport-fit=cover" />
+      <Head>  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Kelly Mara Psicóloga</title>
         <meta name="description" content="Psicóloga em Muriaé-MG. Tratamento para ansiedade, depressão e outros problemas emocionais. Atendimento presencial e online. Agende sua consulta via WhatsApp." />
         <meta name="keywords" content="Psicóloga, Muriaé-MG, ansiedade, depressão, tratamento, terapia, psicologia, atendimento online, terapia online, Kelly Mara, psicóloga Kelly Mara" />
