@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kellymarapsi.com/
+
+# Sitemaps
+Sitemap: https://kellymarapsi.com/sitemap.xml

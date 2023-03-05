@@ -5,7 +5,7 @@ import Instagram from '../files/instagram.png'
 import WhatsApp from '../files/whatsapp.png'
 import Email from '../files/mail.png'
 import Image from 'next/image'
-import {Icon} from './style'
+import {Icon} from '../styles/styles'
 import { CONTACT_BASE } from '../data'
 
 const Social = styled.div`

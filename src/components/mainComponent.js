@@ -1,6 +1,6 @@
 "use client"
 import styled from 'styled-components'
-import {theme} from './globalStyle'
+import {theme} from '../styles/globalStyle'
 import { CONTENT_BASE } from '../data'
 
 const Main = styled.main`

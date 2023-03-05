@@ -1,6 +1,6 @@
 "use client"
-import GlobalStyle  from '../components/globalStyle'
-import {theme} from '../components/globalStyle'
+import GlobalStyle  from '../styles/globalStyle'
+import {theme} from '../styles/globalStyle'
 import { ThemeProvider } from 'styled-components'
 import {Container} from '../components/container'
 import HeaderComponent from '../components/headerComponent'

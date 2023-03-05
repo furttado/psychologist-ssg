@@ -1,12 +1,12 @@
 "use client"
 import styled from 'styled-components'
-import {theme} from './globalStyle'
+import {theme} from '../styles/globalStyle'
 import SocialMediaComponent from './socialMediaComponent'
 import Phone from '../files/phone.png'
 import Location from '../files/location.png'
 import Email from '../files/mail.png'
 import Image from 'next/image'
-import {Icon, Text, Link, footerUrls} from './style'
+import {Icon, Text, Link} from '../styles/styles'
 import {CONTACT_BASE} from '../data'
 
 const Footer = styled.footer`
