@@ -10,8 +10,8 @@ import { CONTACT_BASE } from '../data'
 
 const Social = styled.div`
     padding: 3%; 
-    width: ${props => props && props.boxWidth} ;
-    height: ${props => props && props.boxHeight} ;
+    width: ${props => props.boxWidth} ;
+    height: ${props => props.boxHeight} ;
 
     display:grid;
     row-gap: ${props => props.rowGap};
@@ -20,6 +20,17 @@ const Social = styled.div`
     justify-items: ${props => props.justifyItems};
     align-content: center;
     margin-right: ${props => props.marginRight};
+
+    /* Estilos para tela de desktop */
+    @media only screen and (min-width: 768px) {
+        max-width: 20vw;
+    };
+
+    /* Estilos para tela intermediária */
+    @media only screen and (min-width: 481px) and (max-width: 767px) {
+      
+    };
+
 
 `
 

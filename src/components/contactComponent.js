@@ -10,11 +10,34 @@ const Section = styled.section`
     background-color: ${theme.colors.secondary};
     color: ${theme.colors.primary};
     padding: 10% 3% 12% 3%; 
+
+    @media only screen and (min-width: 768px) {
+    padding:5% 5% 5% 5%;
+  }
+
+   /* Estilos para tela de tablet */
+   @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  };
+
+
 `
 
 const Title = styled.p`
     width: 50%;
     font-size: 30px ;
+
+    @media only screen and (min-width: 768px) {
+    width: 30%;
+    font-size: 60px ;
+
+  }
+
+   /* Estilos para tela de tablet */
+   @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: 40px ;
+    width: 40%;
+  };
+
 `
 
 const Button = styled.button`
@@ -34,6 +57,16 @@ const Button = styled.button`
     }
 
     margin-bottom: 5% ;
+
+    @media only screen and (min-width: 768px) {
+        width: 40%;
+
+  }
+
+   /* Estilos para tela de tablet */
+   @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  };
+
 `
 
 export default function ContactComponent() {

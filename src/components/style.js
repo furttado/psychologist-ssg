@@ -20,7 +20,10 @@ export const Text = styled.p`
     font-size: ${props => props && props.fontSize};
     text-align: ${props => props.textAlign || 'center'} ;
     opacity: ${props => props.opacity || 1};
-    
+
+
+
+   
 `
 
 export const Link = styled.a`
