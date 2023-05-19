@@ -1,6 +1,5 @@
 "use client"
-import styled from 'styled-components'
-import {createGlobalStyle, ThemeProvider} from 'styled-components'
+import {createGlobalStyle} from 'styled-components'
 
 export const theme = {
     colors: {
@@ -21,8 +20,7 @@ const GlobalStyle = createGlobalStyle`
     *::before,
     *::after{
         margin: 0;
-        padding: 0;
-  
+        padding: 0; 
     };
     
     body{
@@ -32,8 +30,7 @@ const GlobalStyle = createGlobalStyle`
         h1: {
         font-size: 50px;
         }
-    }
-  
+    } 
     `
 
 

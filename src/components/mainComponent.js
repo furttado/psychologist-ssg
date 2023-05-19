@@ -1,21 +1,45 @@
 "use client"
 import styled from 'styled-components'
-import {theme} from './globalStyle'
+import {theme} from '../styles/globalStyle'
+import { CONTENT_BASE } from '../data'
 
 const Main = styled.main`
     background: ${theme.colors.secondaryBackground};
-    padding-left: 3%; 
-    padding-right: 3%; 
-    padding-top: 7%;
-    padding-bottom: 7%;
+    padding: 7% 3% 7% 3%;
     height: auto;
 
-           
+    display: grid;
+    justify-items: center;
+
+    /* Estilos para tela de desktop */
+    @media only screen and (min-width: 768px) {
+      
+    };
+
+    /* Estilos para tela intermediária */
+    @media only screen and (min-width: 481px) and (max-width: 767px) {
+      
+    };
+
+
+          
 `
 
 const Text = styled.p`
     text-align: justify;
     color: ${theme.colors.background};
+
+
+    /* Estilos para tela de desktop */
+    @media only screen and (min-width: 768px) {
+      width: 50%
+    };
+
+    /* Estilos para tela intermediária */
+    @media only screen and (min-width: 481px) and (max-width: 767px) {
+      width: 50vw;
+    };
+
 `
 
 const Italic = styled.i`
@@ -24,6 +48,7 @@ const Italic = styled.i`
    
     align-items: center;
     justify-items: center;
+
 `
 
 const Quote = styled.p`
@@ -32,6 +57,17 @@ const Quote = styled.p`
     opacity: 0.8 ;
     text-align: justify;
     color: ${theme.colors.background};
+
+        /* Estilos para tela de desktop */
+    @media only screen and (min-width: 768px) {
+      width: 40%
+    };
+
+    /* Estilos para tela intermediária */
+    @media only screen and (min-width: 481px) and (max-width: 767px) {
+      width: 40%;
+    };
+
 `
 
 const Reference = styled.p`
@@ -40,6 +76,21 @@ const Reference = styled.p`
     text-align: right;
     padding-right: 5%;
     color: ${theme.colors.background};
+
+    /* Estilos para tela de desktop */
+        @media only screen and (min-width: 768px) {
+      width: 50%;
+    padding-right: 30%;
+
+    };
+
+    /* Estilos para tela intermediária */
+    @media only screen and (min-width: 481px) and (max-width: 767px) {
+      width: 50%;
+    };
+
+
+
    
 `
 
@@ -51,18 +102,15 @@ export default function MainComponent() {
     return (
         <Main>
             <Text>
-               Sou formada em Psicologia e apaixonada pela linha de trabalho da Gestalt-terapia, 
-                uma abordagem que entende uma pessoa como um todo em constante crescimento. 
-                O objetivo de meu trabalho é firmar uma parceria terapeuta/cliente que nos leve às 
-                mudanças e compreensões esperadas. Juntos! 
+               {CONTENT_BASE.bio} 
             </Text>
            <br />
             <Italic>
             <Quote>
-            &#8220;A terapia possibilita ao indivíduo deixar de repetir de forma morta sua vida, apresentando um novo conflito criativo que convida ao crescimento, à mudança, ao excitamento e à aventura de viver.&#8221;
+            &#8220;{CONTENT_BASE.quote}&#8221;
             </Quote>
             </Italic>
-            <Reference>Fritz Pearls (1983-1970)</Reference>
+            <Reference style={{justifySelf: 'right'}}>{CONTENT_BASE.author}</Reference>
         </Main>
     )
 }
