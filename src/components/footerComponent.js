@@ -57,10 +57,7 @@ export default function FooterComponent(props) {
                     <Icon width={leftIconsSize} height={leftIconsSize}><Image src={Location} alt='endereço'/></Icon>
                     &nbsp;{CONTACT_BASE.address_main} <br /> 
                     </Link>
-                    <Link href={CONTACT_BASE.address_secondary_maps} target="_blank">
-                    <Icon width={leftIconsSize} height={leftIconsSize}><Image src={Location} alt='endereço'/></Icon>
-                    &nbsp;{CONTACT_BASE.address_secondary}
-                    </Link>
+                    
                 </Text>
                 <SocialMediaComponent 
                     width={iconSize} 
