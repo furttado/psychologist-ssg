@@ -79,11 +79,7 @@ export default function ContactComponent() {
                     <Icon width={'20px'} height={'20px'}><Image src={Location} alt='endereço'/></Icon>
                     &nbsp;{CONTACT_BASE.address_main} <br /> 
                     </Link>
-                    <br />
-                    <Link href={CONTACT_BASE.address_secondary_maps} target="_blank">
-                    <Icon width={'20px'} height={'20px'}><Image src={Location} alt='endereço'/></Icon>
-                    &nbsp;{CONTACT_BASE.address_secondary}
-                    </Link>
+                   
                 </Text>            <br />
             <a href={CONTACT_BASE.whatsapp} target={'_blank'}>
             <Button>AGENDAR</Button>
